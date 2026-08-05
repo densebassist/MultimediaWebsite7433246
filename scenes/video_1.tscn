@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3mcc5qvfeuel"]
+
+[ext_resource type="Script" uid="uid://0gtslkqlr364" path="res://scripts/video_stream_player.gd" id="1_kjq1a"]
+[ext_resource type="AudioStream" uid="uid://bl1s28k81ncee" path="res://Video1.ogg" id="2_pfvwp"]
+[ext_resource type="PackedScene" uid="uid://bl421hl0snsq7" path="res://scenes/buttons.tscn" id="3_pfvwp"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_83n17"]
+file = "Video1.ogg"
+
+[node name="Video_1" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = -301.0
+offset_top = -168.0
+offset_right = 301.0
+offset_bottom = 170.0
+stream = SubResource("VideoStreamTheora_83n17")
+autoplay = true
+expand = true
+script = ExtResource("1_kjq1a")
+
+[node name="Video1" type="AudioStreamPlayer2D" parent="VideoStreamPlayer"]
+position = Vector2(-213, -93)
+stream = ExtResource("2_pfvwp")
+
+[node name="Pause" type="Button" parent="."]
+z_index = 3
+offset_left = -27.0
+offset_top = 129.0
+offset_right = 28.0
+offset_bottom = 160.0
+text = "Pause"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Buttons" parent="." instance=ExtResource("3_pfvwp")]
+offset_left = -287.0
+offset_top = -159.0
+offset_right = -287.0
+offset_bottom = -159.0
+
+[connection signal="finished" from="VideoStreamPlayer" to="VideoStreamPlayer" method="_on_finished"]
+[connection signal="pressed" from="Pause" to="VideoStreamPlayer" method="_on_pause_pressed"]
