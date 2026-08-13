@@ -296,12 +296,12 @@ layout_mode = 2
 custom_minimum_size = Vector2(1152, 1296)
 layout_mode = 2
 
-[node name="AboutMeTable" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control"]
-position = Vector2(569, 928)
-scale = Vector2(0.758301, 0.798828)
-texture = ExtResource("5_8hopj")
-
 [node name="MusicAboutMe" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control"]
 position = Vector2(577, 314)
 scale = Vector2(0.748047, 0.594727)
 texture = ExtResource("6_erg26")
+
+[node name="AboutMeTable" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control"]
+position = Vector2(569, 928)
+scale = Vector2(0.758301, 0.798828)
+texture = ExtResource("5_8hopj")
