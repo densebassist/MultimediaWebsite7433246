@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://m3k21261indf"]
+[gd_scene load_steps=24 format=3 uid="uid://m3k21261indf"]
 
 [ext_resource type="PackedScene" uid="uid://2r0prkinrsf" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ied6n0yd51v" path="res://assets/Dungeon Sprites/TrapmoorTileset_v03.png" id="2_p57ef"]
@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://df31txd4cttgn" path="res://assets/fonts/PixelOperator8.ttf" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://vueoe787o2h2" path="res://scenes/video_projects.tscn" id="9_vtaks"]
 [ext_resource type="PackedScene" uid="uid://d5plcxhnwnkm" path="res://scenes/about_me.tscn" id="10_dinhu"]
+[ext_resource type="PackedScene" uid="uid://bna3yni37xbwt" path="res://scenes/animation_projects.tscn" id="10_kvuet"]
 [ext_resource type="Texture2D" uid="uid://wkgugk3p4ucb" path="res://assets/sprites/pixilart-drawing (3).png" id="11_kvpfn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvpfn"]
@@ -422,6 +423,7 @@ target_scene = ExtResource("9_vtaks")
 [node name="Door3" parent="Doors" instance=ExtResource("8_gee14")]
 position = Vector2(168, 241)
 scale = Vector2(0.800002, 0.800002)
+target_scene = ExtResource("10_kvuet")
 
 [node name="Door4" parent="Doors" instance=ExtResource("8_gee14")]
 position = Vector2(257, 241)
@@ -447,6 +449,20 @@ theme_override_constants/outline_size = 1
 theme_override_constants/shadow_outline_size = 0
 theme_override_fonts/font = ExtResource("9_0tnpc")
 text = "Music"
+
+[node name="Music3" type="Label" parent="Labels"]
+z_index = 1
+offset_left = 135.0
+offset_top = 216.0
+offset_right = 209.0
+offset_bottom = 233.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("9_0tnpc")
+text = "Anims"
 
 [node name="Music2" type="Label" parent="Labels"]
 z_index = 1
@@ -524,6 +540,11 @@ text = "<- About Me"
 
 [node name="Sign_1" type="Sprite2D" parent="."]
 position = Vector2(-118, 224)
+scale = Vector2(2.375, 1)
+texture = ExtResource("11_kvpfn")
+
+[node name="Sign_3" type="Sprite2D" parent="."]
+position = Vector2(168, 224)
 scale = Vector2(2.375, 1)
 texture = ExtResource("11_kvpfn")
 

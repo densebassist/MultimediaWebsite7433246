@@ -19,6 +19,7 @@ stream = SubResource("VideoStreamTheora_83n17")
 autoplay = true
 expand = true
 script = ExtResource("1_kjq1a")
+metadata/_edit_use_anchors_ = true
 
 [node name="Video1" type="AudioStreamPlayer2D" parent="VideoStreamPlayer"]
 position = Vector2(-213, -93)
@@ -31,6 +32,7 @@ offset_top = 129.0
 offset_right = 28.0
 offset_bottom = 160.0
 text = "Pause"
+metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
@@ -40,6 +42,7 @@ offset_left = -287.0
 offset_top = -159.0
 offset_right = -287.0
 offset_bottom = -159.0
+metadata/_edit_use_anchors_ = true
 
 [connection signal="finished" from="VideoStreamPlayer" to="VideoStreamPlayer" method="_on_finished"]
 [connection signal="pressed" from="Pause" to="VideoStreamPlayer" method="_on_pause_pressed"]
