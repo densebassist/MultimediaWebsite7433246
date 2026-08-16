@@ -35,8 +35,11 @@ func _unhandled_input(event: InputEvent) -> void:
 func teleport_player() -> void:
 	if target_scene:
 		await get_tree().create_timer(1).timeout
-		
-		get_tree().change_scene_to_packed(target_scene)
+		if not target_scene:
+			print("Warning: No target scene assigned to this teleporter!")
+			
+		else:
+			get_tree().change_scene_to_packed(target_scene)
 	else:
 		print("Warning: No target scene assigned to this teleporter!")
 

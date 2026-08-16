@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bna3yni37xbwt" path="res://scenes/animation_projects.tscn" id="10_kvuet"]
 [ext_resource type="Texture2D" uid="uid://wkgugk3p4ucb" path="res://assets/sprites/pixilart-drawing (3).png" id="11_kvpfn"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvpfn"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvuet"]
 texture = ExtResource("2_yqjtg")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -174,7 +174,7 @@ texture = ExtResource("2_yqjtg")
 2:4/size_in_atlas = Vector2i(3, 3)
 2:4/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dinhu"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_trtic"]
 texture = ExtResource("2_p57ef")
 1:0/0 = 0
 2:0/0 = 0
@@ -268,8 +268,8 @@ texture = ExtResource("2_p57ef")
 
 [sub_resource type="TileSet" id="TileSet_lbhrr"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_kvpfn")
-sources/1 = SubResource("TileSetAtlasSource_dinhu")
+sources/0 = SubResource("TileSetAtlasSource_kvuet")
+sources/1 = SubResource("TileSetAtlasSource_trtic")
 
 [sub_resource type="Animation" id="Animation_gee14"]
 length = 0.001
