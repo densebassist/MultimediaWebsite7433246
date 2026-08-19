@@ -295,6 +295,7 @@ offset_top = -102.0
 offset_right = -192.0
 offset_bottom = -102.0
 scale = Vector2(0.390894, 0.390894)
+last_scene = "uid://m3k21261indf"
 
 [node name="Doors" type="Node" parent="."]
 

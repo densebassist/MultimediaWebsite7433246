@@ -282,6 +282,7 @@ offset_left = -497.0
 offset_top = -796.0
 offset_right = -497.0
 offset_bottom = -796.0
+last_scene = "uid://m3k21261indf"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 offset_left = -498.0

@@ -23,10 +23,16 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_puxpd")
 text = "Home"
 
+[node name="ButtonBack" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Back
+"
+
 [node name="ButtonQuit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Quit
 "
 
 [connection signal="pressed" from="VBoxContainer/ButtonHome" to="." method="_on_button_home_pressed"]
+[connection signal="pressed" from="VBoxContainer/ButtonBack" to="." method="_on_button_back_pressed"]
 [connection signal="pressed" from="VBoxContainer/ButtonQuit" to="." method="_on_button_quit_pressed"]

@@ -280,6 +280,7 @@ mouse_filter = 2
 
 [node name="Buttons" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_id67w")]
 layout_mode = 2
+last_scene = "uid://m3k21261indf"
 metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="ScrollContainer/VBoxContainer"]

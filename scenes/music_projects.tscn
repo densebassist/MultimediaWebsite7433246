@@ -420,6 +420,7 @@ offset_top = -512.0
 offset_right = -577.0
 offset_bottom = -512.0
 scale = Vector2(1.61461, 1.61461)
+last_scene = "uid://m3k21261indf"
 
 [connection signal="gui_input" from="AudioBar_1/TextureProgressBar" to="AudioBar_1" method="_on_texture_progress_bar_gui_input"]
 [connection signal="button_down" from="AudioBar_1/Pause" to="AudioBar_1" method="_on_pause_button_down"]
