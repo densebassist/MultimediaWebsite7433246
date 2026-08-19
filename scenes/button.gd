@@ -1,8 +1,8 @@
 extends Button
-
+@export var video_link: String = "https://youtube.com"
 
 func open_link():
-	OS.shell_open("https://drive.google.com/file/d/1gpkIxeM5Ng-wdJNX68NnfUbi_Yl0Kry8/view?usp=sharing")
+	OS.shell_open(video_link)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

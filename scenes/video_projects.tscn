@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://vueoe787o2h2"]
+[gd_scene load_steps=15 format=3 uid="uid://vueoe787o2h2"]
 
 [ext_resource type="PackedScene" uid="uid://2r0prkinrsf" path="res://scenes/player.tscn" id="1_7mfu5"]
 [ext_resource type="PackedScene" uid="uid://bl421hl0snsq7" path="res://scenes/buttons.tscn" id="2_elp5x"]
@@ -9,6 +9,8 @@
 [ext_resource type="FontFile" uid="uid://df31txd4cttgn" path="res://assets/fonts/PixelOperator8.ttf" id="7_afqfa"]
 [ext_resource type="Texture2D" uid="uid://wkgugk3p4ucb" path="res://assets/sprites/pixilart-drawing (3).png" id="8_kds1g"]
 [ext_resource type="PackedScene" uid="uid://bed8ykwcc6wuc" path="res://scenes/video_2.tscn" id="9_kds1g"]
+[ext_resource type="FontFile" uid="uid://bmu4hrdqjhpqb" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="10_r4wm3"]
+[ext_resource type="Script" uid="uid://2xuut5gfdgc" path="res://scenes/button.gd" id="11_o7m75"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_52cm5"]
 texture = ExtResource("3_phygx")
@@ -325,10 +327,10 @@ target_scene = ExtResource("9_kds1g")
 
 [node name="Video_2_Label" type="Label" parent="Doors/Video_2_Door"]
 z_index = 1
-offset_left = -42.0
-offset_top = -37.0
-offset_right = 46.0
-offset_bottom = -21.0
+offset_left = -6.99998
+offset_top = -36.0
+offset_right = 81.0
+offset_bottom = -20.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -338,6 +340,32 @@ theme_override_fonts/font = ExtResource("7_afqfa")
 text = "Video 2"
 
 [node name="Sign_2" type="Sprite2D" parent="Doors/Video_2_Door"]
-position = Vector2(-2.28882e-05, -29)
+position = Vector2(35, -28)
 scale = Vector2(2.9375, 1)
 texture = ExtResource("8_kds1g")
+
+[node name="Button_1" type="Button" parent="."]
+offset_left = 115.0
+offset_top = 46.0
+offset_right = 251.0
+offset_bottom = 100.0
+theme_override_colors/icon_hover_pressed_color = Color(0.703808, 0.703808, 0.703808, 1)
+theme_override_colors/font_pressed_color = Color(0.933333, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_r4wm3")
+text = "Click For 
+Video"
+script = ExtResource("11_o7m75")
+video_link = "https://drive.google.com/file/d/1gpkIxeM5Ng-wdJNX68NnfUbi_Yl0Kry8/view"
+
+[node name="Button_2" type="Button" parent="."]
+offset_left = -261.0
+offset_top = 46.0
+offset_right = -125.0
+offset_bottom = 100.0
+theme_override_colors/icon_hover_pressed_color = Color(0.703808, 0.703808, 0.703808, 1)
+theme_override_colors/font_pressed_color = Color(0.933333, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_r4wm3")
+text = "Click For 
+Video"
+script = ExtResource("11_o7m75")
+video_link = "https://drive.google.com/file/d/10DYV5yftHhEXPW0DBjjkqZm5q6s-pyTY/view"

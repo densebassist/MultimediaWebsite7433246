@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bed8ykwcc6wuc"]
+[gd_scene load_steps=4 format=3 uid="uid://bed8ykwcc6wuc"]
 
 [ext_resource type="Script" uid="uid://0gtslkqlr364" path="res://scripts/video_stream_player.gd" id="1_k04wm"]
 [ext_resource type="VideoStream" uid="uid://cs1numoheq4oc" path="res://What took you so long v2.1_compressed.ogv" id="1_mbvi8"]
 [ext_resource type="PackedScene" uid="uid://bl421hl0snsq7" path="res://scenes/buttons.tscn" id="3_3v4lx"]
-[ext_resource type="Script" uid="uid://2xuut5gfdgc" path="res://scenes/button.gd" id="4_mbvi8"]
 
 [node name="Video_2" type="Node2D"]
 
@@ -34,13 +33,6 @@ offset_left = -287.0
 offset_top = -159.0
 offset_right = -287.0
 offset_bottom = -159.0
-
-[node name="Button" type="Button" parent="."]
-offset_left = -148.0
-offset_top = -76.0
-offset_right = 8.0
-offset_bottom = 8.0
-script = ExtResource("4_mbvi8")
 
 [connection signal="finished" from="VideoStreamPlayer" to="VideoStreamPlayer" method="_on_finished"]
 [connection signal="pressed" from="Pause" to="VideoStreamPlayer" method="_on_pause_pressed"]

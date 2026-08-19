@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://m3k21261indf"]
+[gd_scene load_steps=25 format=3 uid="uid://m3k21261indf"]
 
 [ext_resource type="PackedScene" uid="uid://2r0prkinrsf" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ied6n0yd51v" path="res://assets/Dungeon Sprites/TrapmoorTileset_v03.png" id="2_p57ef"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://d5plcxhnwnkm" path="res://scenes/about_me.tscn" id="10_dinhu"]
 [ext_resource type="PackedScene" uid="uid://bna3yni37xbwt" path="res://scenes/animation_projects.tscn" id="10_kvuet"]
 [ext_resource type="Texture2D" uid="uid://wkgugk3p4ucb" path="res://assets/sprites/pixilart-drawing (3).png" id="11_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://br8j33n4h7ngs" path="res://scenes/contact.tscn" id="12_trtic"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvuet"]
 texture = ExtResource("2_yqjtg")
@@ -420,7 +421,7 @@ scale = Vector2(0.800002, 0.800002)
 target_position = Vector2(156, -360)
 target_scene = ExtResource("9_vtaks")
 
-[node name="Door3" parent="Doors" instance=ExtResource("8_gee14")]
+[node name="Anim_Door3" parent="Doors" instance=ExtResource("8_gee14")]
 position = Vector2(168, 241)
 scale = Vector2(0.800002, 0.800002)
 target_scene = ExtResource("10_kvuet")
@@ -433,6 +434,11 @@ scale = Vector2(0.800002, 0.800002)
 position = Vector2(-184, 17)
 scale = Vector2(0.800002, 0.800002)
 target_scene = ExtResource("10_dinhu")
+
+[node name="Contact_Door" parent="Doors" instance=ExtResource("8_gee14")]
+position = Vector2(397, 49)
+scale = Vector2(0.800002, 0.800002)
+target_scene = ExtResource("12_trtic")
 
 [node name="Labels" type="Node" parent="."]
 
@@ -552,3 +558,19 @@ texture = ExtResource("11_kvpfn")
 position = Vector2(-27, 224)
 scale = Vector2(2.375, 1)
 texture = ExtResource("11_kvpfn")
+
+[node name="Music2" type="Label" parent="."]
+z_index = 1
+offset_left = 374.0
+offset_top = 14.0
+offset_right = 478.0
+offset_bottom = 49.0
+scale = Vector2(0.543936, 0.543936)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("9_0tnpc")
+text = "'E' to 
+interact"
