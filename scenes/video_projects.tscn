@@ -12,7 +12,7 @@
 [ext_resource type="FontFile" uid="uid://bmu4hrdqjhpqb" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="10_r4wm3"]
 [ext_resource type="Script" uid="uid://2xuut5gfdgc" path="res://scenes/button.gd" id="11_o7m75"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_52cm5"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r4wm3"]
 texture = ExtResource("3_phygx")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -172,7 +172,7 @@ texture = ExtResource("3_phygx")
 2:4/size_in_atlas = Vector2i(3, 3)
 2:4/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8vdnq"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7m75"]
 texture = ExtResource("4_03i5a")
 1:0/0 = 0
 2:0/0 = 0
@@ -267,8 +267,8 @@ texture = ExtResource("4_03i5a")
 
 [sub_resource type="TileSet" id="TileSet_btgkm"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_52cm5")
-sources/1 = SubResource("TileSetAtlasSource_8vdnq")
+sources/0 = SubResource("TileSetAtlasSource_r4wm3")
+sources/1 = SubResource("TileSetAtlasSource_o7m75")
 
 [node name="Video_projects" type="Node2D"]
 
