@@ -103,7 +103,6 @@ placeholder_text = "Type Here"
 wrap_mode = 1
 
 [node name="TextureButton" type="TextureButton" parent="ScrollContainer/VBoxContainer/Control/ContactPageEnhanced"]
-anchors_preset = -1
 offset_left = -980.833
 offset_top = 476.999
 offset_right = -916.833
